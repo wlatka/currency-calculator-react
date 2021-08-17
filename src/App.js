@@ -5,11 +5,11 @@ import "./style.css";
 
 function App() {
 
-    const [name, setName] = useState(0);
+    const [name, setName] = useState("");
 
-    const pln = 4.5577 * { name };
-    const usd = 0.83 * { name };
-    const gbp = 0.87 * { name };
+    const pln = 4.5577 * name;
+    const usd = 0.83 * name;
+    const gbp = 0.87 * name;
 
     return (
 
@@ -25,7 +25,6 @@ function App() {
                             className="form__field"
                             type="number"
                             min="1"
-                            name="wpisz-kwote"
                             onChange={({ target }) => setName(target.value)}
                             value={name} />
                     </label>
@@ -37,12 +36,12 @@ function App() {
                 </p>
                 <p>
                     <label>
-                        USD: <strong>{usd.toFixed(2)} USD</strong>
+                        USD: <strong>{usd.toFixed(2)} $</strong>
                     </label>
                 </p>
                 <p>
                     <label>
-                        GBP: <strong>{gbp.toFixed(2)} GBP</strong>
+                        GBP: <strong>{gbp.toFixed(2)} £</strong>
                     </label>
                 </p>
             </fieldset>
