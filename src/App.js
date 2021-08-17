@@ -11,6 +11,10 @@ function App() {
     const usd = 0.83 * name;
     const gbp = 0.87 * name;
 
+    const removeName = () => (
+        name
+    );
+
     return (
 
         <form className="form">
@@ -46,7 +50,7 @@ function App() {
                 </p>
             </fieldset>
             <p>
-                <button className="form__button" type="reset">Wyczyść</button>
+                <button className="form__button" type={removeName}>Wyczyść</button>
             </p>
         </form>
 
