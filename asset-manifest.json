@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/currency-calculator-react/static/css/main.5a402936.chunk.css",
-    "main.js": "/currency-calculator-react/static/js/main.a0670bcd.chunk.js",
-    "main.js.map": "/currency-calculator-react/static/js/main.a0670bcd.chunk.js.map",
+    "main.js": "/currency-calculator-react/static/js/main.943da1d3.chunk.js",
+    "main.js.map": "/currency-calculator-react/static/js/main.943da1d3.chunk.js.map",
     "runtime-main.js": "/currency-calculator-react/static/js/runtime-main.84a78e4c.js",
     "runtime-main.js.map": "/currency-calculator-react/static/js/runtime-main.84a78e4c.js.map",
     "static/js/2.bc8f4f9e.chunk.js": "/currency-calculator-react/static/js/2.bc8f4f9e.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.84a78e4c.js",
     "static/js/2.bc8f4f9e.chunk.js",
     "static/css/main.5a402936.chunk.css",
-    "static/js/main.a0670bcd.chunk.js"
+    "static/js/main.943da1d3.chunk.js"
   ]
 }
