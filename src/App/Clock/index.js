@@ -11,7 +11,7 @@ const formatDate = (date) => date.toLocaleString(undefined, {
 });
 
 const Clock = () => {
-    const [date, setDate] = useState(new Date(0));
+    const [date, setDate] = useState(new Date());
 
     useEffect(() => {
         const intervalId = setInterval(() => {
