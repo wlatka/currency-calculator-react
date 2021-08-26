@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./style.css";
-
+import Clock from "./Clock";
 
 
 function App() {
@@ -15,7 +15,11 @@ function App() {
         name
     );
 
+
     return (
+
+
+
 
         <form className="form">
             <h1 className="form__title">Konwerter walut</h1>
@@ -49,13 +53,17 @@ function App() {
                     </label>
                 </p>
             </fieldset>
+            <p><Clock /></p>
             <p>
                 <button className="form__button" type={removeName}>Wyczyść</button>
             </p>
         </form>
 
 
+
     );
+
 };
+
 
 export default App;
