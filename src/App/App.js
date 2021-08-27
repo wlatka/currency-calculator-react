@@ -8,18 +8,14 @@ function App() {
     const [name, setName] = useState("");
 
     const pln = 4.5577 * name;
-    const usd = 0.83 * name;
-    const gbp = 0.87 * name;
+    const usd = 1.18 * name;
+    const gbp = 0.86 * name;
 
     const removeName = () => (
         name
     );
 
-
     return (
-
-
-
         <>
             <Clock />
             <form className="form">
@@ -54,17 +50,12 @@ function App() {
                         </label>
                     </p>
                 </fieldset>
-
                 <p>
                     <button className="form__button" type={removeName}>Wyczyść</button>
                 </p>
             </form>
         </>
-
-
     );
-
 };
-
 
 export default App;
