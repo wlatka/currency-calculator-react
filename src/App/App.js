@@ -1,7 +1,6 @@
 import { useState } from "react";
-import "./style.css";
+import { StyledForm, Title, Fieldset, Legend, Span, Input, Button } from "./styled";
 import Clock from "./Clock";
-
 
 function App() {
 
@@ -18,16 +17,15 @@ function App() {
     return (
         <>
             <Clock />
-            <form className="form">
-                <h1 className="form__title">Konwerter walut</h1>
-                <fieldset className="form__fieldset">
-                    <legend className="form__legent">Przelicz z EUR na inne waluty.</legend>
+            <StyledForm>
+                <Title>Konwerter walut</Title>
+                <Fieldset>
+                    <Legend>Przelicz z EUR na inne waluty.</Legend>
                     <p>
                         <label>
-                            <span className="form__innerText">Wpisz kwotę EUR *:</span>
-                            <input
+                            <Span>Wpisz kwotę EUR *:</Span>
+                            <Input
                                 required
-                                className="form__field"
                                 type="number"
                                 min="1"
                                 onChange={({ target }) => setName(target.value)}
@@ -49,11 +47,11 @@ function App() {
                             GBP: <strong>{gbp.toFixed(2)} £</strong>
                         </label>
                     </p>
-                </fieldset>
+                </Fieldset>
                 <p>
-                    <button className="form__button" type={removeName}>Wyczyść</button>
+                    <Button type={removeName}>Wyczyść</Button>
                 </p>
-            </form>
+            </StyledForm>
         </>
     );
 };
