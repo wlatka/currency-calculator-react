@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useCurrentDate } from "./useCurrentData";
 import { Div } from "./styled";
 
 const formatDate = (date) => date.toLocaleString(undefined, {
@@ -10,18 +10,8 @@ const formatDate = (date) => date.toLocaleString(undefined, {
     month: "long"
 });
 
-const Clock = () => {
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
-
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, []);
+export const Clock = () => {
+    const date = useCurrentDate();
 
     return (
         <Div>
