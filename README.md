@@ -3,6 +3,12 @@
 ## Link to the converter
 
 https://wlatka.github.io/currency-calculator-react/
+## Description
+### Technologies used to create the application:
+- HTML
+- JavaScript (React)
+- Styled Components
+- Custom hooks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
