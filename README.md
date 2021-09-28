@@ -5,10 +5,12 @@
 https://wlatka.github.io/currency-calculator-react/
 ## Description
 ### Technologies used to create the application:
-- HTML
-- JavaScript (React)
+- Semantic HTML5
+- CSS | BEM | Flexbox
+- JavaScript (React.js)
 - Styled Components
 - Custom hooks
+- API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
