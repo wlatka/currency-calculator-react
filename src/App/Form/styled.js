@@ -1,9 +1,5 @@
 import styled, { css } from "styled-components";
 
-export const StyledForm = styled.form`
-    padding: 10px 10px;
-`;
-
 export const Title = styled.h1`
     color: hsl(308, 100%, 32%);
 `;
@@ -17,6 +13,16 @@ export const Legend = styled.legend`
     background-color: #640057;
     color: white;
     padding: 10px;
+`;
+
+export const Loading = styled.p`
+    color: teal;
+    padding: 20px;
+`;
+
+export const Failure = styled.p`
+    color: crimson;
+    padding: 20px;
 `;
 
 export const Span = styled.span`
@@ -34,6 +40,13 @@ export const Input = styled.input`
         background-color: hsl(308, 100%, 94%);
         border-color: rgb(136, 136, 136);
     `}
+`;
+
+export const Info = styled.p`
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+    color: #000000;
 `;
 
 export const Button = styled.button`
