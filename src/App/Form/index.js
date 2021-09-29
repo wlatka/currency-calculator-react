@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Fieldset, Title, Legend, Loading, Failure, Span, Input, Info, Button } from "./styled";
+import { Wrapper, Fieldset, Title, Legend, Loading, Failure, Span, Input, Info, Button } from "./styled";
 import { useRatesData } from "./useRatesData";
 import { Result } from "../Result";
 
@@ -26,6 +26,8 @@ export const Form = () => {
     };
 
     return (
+
+        <Wrapper>
         <form onSubmit={onSubmit}>
             <Title>
                 Konwerter walut
@@ -35,14 +37,14 @@ export const Form = () => {
                 {ratesData.state === "loading"
                     ? (
                         <Loading>
-                            Sekundka... <br />Ładuję kursy walut z Europejskiego Banku Centralnego
+                            Chwileczkę... <br />Ładuję kursy walut z Europejskiego Banku Centralnego.
                         </Loading>
                     )
                     : (
                         ratesData.state === "error" ? (
 
                             <Failure>
-                                Hmmm... Coś poszło nie tak. Sprawdź czy masz połączenie z internetem.
+                                Ojojoj... Coś poszło nie tak. Sprawdź czy masz połączenie z internetem.
                             </Failure>
                         ) : (
                             <>
@@ -92,6 +94,7 @@ export const Form = () => {
                     )}
             </Fieldset>
         </form>
+        </Wrapper>
     );
 };
 
