@@ -86,7 +86,8 @@ export const Form = () => {
                                     <Button>Przelicz</Button>
                                 </p>
                                 <Info>
-                                    Kursy walut pobierane są z Europejskiego Banku Centralnego.
+                                    Kursy walut pobierane są z Europejskiego Banku Centralnego.<br />
+                                    Aktualne na dzień <b>{ratesData.date}</b>
                                 </Info>
                                 <Result result={result} />
                             </>
